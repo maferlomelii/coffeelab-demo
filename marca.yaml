@@ -1,0 +1,66 @@
+# Configuración del cliente: todo lo que cambia de un cliente a otro está aquí.
+# Para un cliente nuevo se cambia este archivo, no app.py.
+
+cliente: CoffeeLab
+titulo_app: CoffeeLab · Tablero de operación
+subtitulo: Seguimiento del plan "Crecer sin perder clientes"
+icono: "☕"
+
+colores:
+  oscuro: "#2A1E17"     # textos, barra lateral
+  claro: "#F6F1EA"      # fondo
+  tarjeta: "#FFFDF9"    # tarjetas
+  acento: "#A9521C"     # naranja tostado
+  acento_claro: "#E8A462"
+  verde: "#2F6F73"      # "en meta"
+  amarillo: "#C98A1B"   # "cerca de la meta"
+  rojo: "#B23A2E"       # "lejos de la meta"
+  gris: "#7A6A5E"
+  linea: "#E4DACD"
+
+# Módulos encendidos (cada uno es una fuente de datos)
+modulos:
+  - caja            # pedidos, ventas, tiempos
+  - autoservicio    # tiempos del kiosco / QR
+  - encuesta_qr     # satisfacción del cliente
+  - rh              # plantilla y renuncias
+  - encuesta_equipo # clima laboral
+  - academia        # personal certificado
+
+sucursales:
+  - Condesa
+  - Roma
+  - Polanco
+  - Santa Fe
+  - Ciudad Universitaria
+  - Coyoacán
+  - Del Valle
+  - Narvarte
+  - Tlalpan
+  - Juárez
+  - Escandón
+  - Nápoles
+  - San Ángel
+  - Lindavista
+  - Insurgentes Sur
+
+# Sucursales con kioscos de autoservicio (prueba)
+piloto_kioscos:
+  - Condesa
+  - Roma
+  - Polanco
+  - Santa Fe
+  - Ciudad Universitaria
+
+# Días que lleva el plan (para los datos de ejemplo)
+dias_desde_inicio_plan: 120
+
+# Indicadores: valor al inicio del plan, meta y si "más es mejor"
+kpis:
+  satisfaccion:   {nombre: Satisfacción del cliente, unidad: "%",   inicio: 72,  meta: 90, mas_es_mejor: true,  revision: Cada semana, fuente: "Encuesta QR del ticket"}
+  tiempo:         {nombre: Tiempo de atención,       unidad: " min", inicio: 12,  meta: 8,  mas_es_mejor: false, revision: Cada día,    fuente: "Hora de pedido y de entrega"}
+  incorrectos:    {nombre: Pedidos incorrectos,      unidad: "%",   inicio: 18,  meta: 5,  mas_es_mejor: false, revision: Cada día,    fuente: "Pedidos rehechos"}
+  clima:          {nombre: Clima laboral,            unidad: "/10", inicio: 6.1, meta: 8,  mas_es_mejor: true,  revision: Cada mes,    fuente: "Encuesta anónima al equipo"}
+  rotacion:       {nombre: Rotación anualizada,      unidad: "%",   inicio: 35,  meta: 20, mas_es_mejor: false, revision: Cada mes,    fuente: "Renuncias registradas en RH"}
+  ventas:         {nombre: Crecimiento de ventas,    unidad: "%",   inicio: 15,  meta: 12, mas_es_mejor: true,  revision: Cada mes,    fuente: "Ventas en caja vs. año anterior"}
+  certificados:   {nombre: Personal certificado,     unidad: "%",   inicio: 0,   meta: 100, mas_es_mejor: true, revision: Cada mes,    fuente: "Academia CoffeeLab"}

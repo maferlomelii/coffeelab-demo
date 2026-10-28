@@ -1,0 +1,9 @@
+streamlit>=1.50
+streamlit-authenticator==0.4.2
+gspread>=6.0
+google-auth
+pandas
+numpy
+altair
+pyyaml
+reportlab

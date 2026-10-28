@@ -1,0 +1,14 @@
+# CONFIG DE EJEMPLO - solo para probar. Usuario: demo / contraseña: demo1234
+# Para uso real: copia este archivo a config.yaml, cambia usuarios y contraseñas
+# (usa make_password.py para generar los hashes) y NO subas config.yaml a GitHub.
+credentials:
+  usernames:
+    demo:
+      name: Usuario Demo
+      email: demo@example.com
+      password: $2b$12$YlHdeaRVdXxDBe531HpXaOPrbOta3956.YIuYy8DXgfUEY.Uwb6Ra
+      
+cookie:
+  name: coffeelab_demo
+  key: 7965c79fb385f2fb3ef33c441ecdd8c0c62faef914a9623c
+  expiry_days: 7
