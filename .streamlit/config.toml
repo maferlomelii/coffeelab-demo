@@ -1,0 +1,18 @@
+# Tema de marca: CoffeeLab (demo)
+[theme]
+base = "light"
+primaryColor = "#A9521C"
+backgroundColor = "#F6F1EA"
+secondaryBackgroundColor = "#EFE6DA"
+textColor = "#2A1E17"
+linkColor = "#2F6F73"
+baseRadius = "large"
+font = "DM Sans:https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
+headingFont = "Fraunces:https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&display=swap"
+headingFontWeights = [700, 700, 700, 600, 600, 600]
+
+[theme.sidebar]
+backgroundColor = "#2A1E17"
+secondaryBackgroundColor = "#3B2B21"
+textColor = "#F6F1EA"
+primaryColor = "#E8A462"
